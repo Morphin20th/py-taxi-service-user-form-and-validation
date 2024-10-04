@@ -27,4 +27,6 @@
     {% endfor %}
   </div>
   <a href="{% url 'taxi:driver-delete' pk=driver.id %}" type="button" class="btn btn-danger">Delete</a>
+  <a href="{{ request.GET.next }}" class="btn btn-secondary">Cancel</a>
+
 {% endblock %}
